@@ -31,7 +31,7 @@
         }
     },
     "Item":{
-        "Types":[
+        "types":[
             "arme","sort"
         ],
         "templates":{
