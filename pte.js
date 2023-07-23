@@ -1,5 +1,5 @@
-import PTEItemSheet from "./modules/sheet/PTEItemSheet";
-import { pte } from "./modules/config";
+import PTEItemSheet from "./modules/sheet/PTEItemSheet.js";
+import { pte } from "./modules/config.js";
 
 
 Hooks.once("init",function()
