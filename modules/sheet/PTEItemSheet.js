@@ -14,7 +14,7 @@ export default class PTEItemSheet extends ItemSheet{
 
       get template()
       {
-        return `pte/templates/sheets/${this.item.type}-sheet.html`
+        return `systems/pte/templates/items/${this.item.type}-sheet.html`
       }
 
     getData(){
