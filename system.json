@@ -2,13 +2,13 @@
     "id":"pte",
     "title":"Pathfinder Titou edition",
     "description":"Version remixé de pathfinder",
-    "author":"titou",
+    "authors":["titou"],
     "version":0.01,
     "esmodules":[
         "pte.js"
     ],
     "styles":[
-        "pte.css"
+        "style/pte.css"
     ],
     "packs":[
 
