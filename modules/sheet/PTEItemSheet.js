@@ -12,10 +12,10 @@ export default class PTEItemSheet extends ItemSheet{
         });
       }
 
-      /*get template()
+      get template()
       {
         return `pte/templates/sheets/${this.item.type}-sheet.html`
-      }*/
+      }
 
     getData(){
         const data =super.getData()
