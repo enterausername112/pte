@@ -17,5 +17,6 @@
     "gridUnit":"m",
     "primaryTokenAttribute":"sante",
     "secondaryTokenAttribute":"blessure",
-    "initiative":"3D10"
+    "initiative":"3D10",
+    "download":"https://github.com/enterausername112/pte/archive/refs/heads/main.zip"
 }
