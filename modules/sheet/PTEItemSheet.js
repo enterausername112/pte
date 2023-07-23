@@ -1,10 +1,9 @@
 export default class PTEItemSheet extends ItemSheet{
 
 
-    get defaultOptions() {
+    static get defaultOptions() {
         return foundry.utils.mergeObject(super.defaultOptions, {
-          classes: ["pte", "sheet", "item",this.item.type],
-          template: `pte/templates/sheets/${this.item.type}-sheet.html`,
+          classes: ["pte", "sheet", "item"],
           width: 520,
           height: 480,
           tabs: [{navSelector: ".sheet-tabs", contentSelector: ".sheet-body", initial: "description"}],
