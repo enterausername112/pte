@@ -8,6 +8,6 @@ console.log("pte | demarrage du systeme")
 
 CONFIG.pte=pte
 
-Item.unregisterSheet("core",ItemSheet)
-Item.registerSheet("pte",PTEItemSheet,{makeDefault:true})
+Items.unregisterSheet("core",ItemSheet)
+Items.registerSheet("pte",PTEItemSheet,{makeDefault:true})
 })
