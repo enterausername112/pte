@@ -3,7 +3,7 @@
     "title":"Pathfinder Titou edition",
     "description":"Version remixé de pathfinder",
     "authors":["titou"],
-    "version":0.01,
+    "version":0.02,
     "esmodules":[
         "pte.js"
     ],
@@ -18,5 +18,6 @@
     "primaryTokenAttribute":"sante",
     "secondaryTokenAttribute":"blessure",
     "initiative":"3D10",
-    "download":"https://github.com/enterausername112/pte/archive/refs/heads/main.zip"
+    "download":"https://github.com/enterausername112/pte/archive/refs/heads/main.zip",
+    "manifest":"https://raw.githubusercontent.com/enterausername112/pte/main/system.json"
 }
