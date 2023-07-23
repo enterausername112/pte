@@ -3,7 +3,7 @@
     "title":"Pathfinder Titou edition",
     "description":"Version remixé de pathfinder",
     "authors":["titou"],
-    "version":0.02,
+    "version":0.03,
     "esmodules":[
         "pte.js"
     ],
