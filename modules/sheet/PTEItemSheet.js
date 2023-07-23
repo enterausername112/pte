@@ -1,7 +1,7 @@
 export default class PTEItemSheet extends ItemSheet{
 
 
-    static get defaultOptions() {
+    get defaultOptions() {
         return foundry.utils.mergeObject(super.defaultOptions, {
           classes: ["pte", "sheet", "item",this.item.type],
           template: `pte/templates/sheets/${this.item.type}-sheet.html`,
@@ -12,10 +12,10 @@ export default class PTEItemSheet extends ItemSheet{
         });
       }
 
-      get template()
+      /*get template()
       {
         return `pte/templates/sheets/${this.item.type}-sheet.html`
-      }
+      }*/
 
     getData(){
         const data =super.getData()
