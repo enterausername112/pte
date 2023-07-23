@@ -1,0 +1,54 @@
+{
+    "Actor":{
+        "types":["PJ","creature","Contenant","piege","sort-persistant","structure"],
+        "htmlFields": ["description"],
+        "templates":{
+            "commun":{
+                "descripion":""
+            },
+            "destructible":{
+                "blessure":{
+                    "value":0,
+                    "max":10
+                },
+                "etat": {
+                    "value":0,
+                    "max":4
+                },
+                "echelle":"vivant"
+            }
+        },
+        "PJ":{
+            "template":["destructible","commun"]
+        },
+        "creature":
+        {
+            "template":["destructible","commun"],
+            "relation":{
+                "value":10,
+                "max": 100
+            }
+        }
+    },
+    "Item":{
+        "Types":[
+            "arme","sort"
+        ],
+        "templates":{
+            "objet":{
+                "descripion":"",
+                "poids":0,
+                "prix": 0
+            }
+        },
+        "arme":{
+            "templates":["objet"],
+            "toucher":5,
+            "degat":3,
+            "attaque":1
+        },
+        "sort":{
+            "portee":0
+        }
+    }
+}

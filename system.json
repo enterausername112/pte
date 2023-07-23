@@ -1,0 +1,21 @@
+{
+    "name":"pte",
+    "title":"Pathfinder Titou edition",
+    "description":"Version remixé de pathfinder",
+    "author":"titou",
+    "version":0.01,
+    "esmodules":[
+        "pte.js"
+    ],
+    "styles":[
+        "pte.css"
+    ],
+    "packs":[
+
+    ],
+    "gridDistance":1,
+    "gridUnit":"m",
+    "primaryTokenAttribute":"sante",
+    "secondaryTokenAttribute":"blessure",
+    "initiative":"3D10"
+}
