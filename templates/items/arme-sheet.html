@@ -39,7 +39,7 @@
                 <label>Traits</label>
                 {{#each system.traits }}
                 <label class="checkbox">
-                    <input type="checkbox" name="system.traits.{{@key}}" checked="{{this}}"/> {{@key}}
+                    <input type="checkbox" name="system.traits.{{@key}}" {{#if this}}checked{{/if}} /> {{@key}}
                 </label>
                 {{/each}}
             </div>
