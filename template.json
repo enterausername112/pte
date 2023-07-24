@@ -36,7 +36,7 @@
         ],
         "templates":{
             "objet":{
-                "descripion":"",
+                "description":"",
                 "poids":0,
                 "prix": 0
             }
@@ -44,8 +44,12 @@
         "arme":{
             "templates":["objet"],
             "toucher":5,
-            "degat":3,
-            "attaque":1
+            "degat":[],
+            "attaque":1,
+            "traits":{
+                "agile":false,
+                "parade":false
+            }
         },
         "sort":{
             "portee":0

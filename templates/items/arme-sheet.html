@@ -7,14 +7,19 @@
             </h1>
             <div class="resource">
                 <label>Poids</label>
-                <input type="number" name="system.poid" value="{{systemData.poid}}"/>
+                <input type="number" name="system.poid" value="{{system.poid}}"/>
             </div>
+            <div class="resource">
+                <label>Prix</label>
+                <input type="number" name="system.prix" value="{{system.prix}}"/>
+            </div>           
         </div>
     </header>
 
     {{!-- Sheet Tab Navigation --}}
     <nav class="sheet-tabs tabs" data-group="primary">
-        <a class="item" data-tab="attributes">Propriétés</a>
+        <a class="item" data-tab="combat">Combat</a>
+        <a class="item" data-tab="traits">Trait</a>
         <a class="item" data-tab="description">Description</a>
     </nav>
 
@@ -23,10 +28,22 @@
 
 
         {{!-- Attributes Tab --}}
-        <div class="tab attributes" data-group="primary" data-tab="attributes">
-         <p>truc chose</p>
+        <div class="tab combat" data-group="primary" data-tab="combat">
+            <div class="resource">
+                <label>toucher</label>
+                <input type="number" name="system.toucher" value="{{system.toucher}}"/>
+            </div>   
         </div>
-
+        <div class="tab traits" data-group="primary" data-tab="traits">
+            <div class="form-group stacked">
+                <label>Traits</label>
+                {{#each system.traits as |nom oui|}}
+                <label class="checkbox">
+                    <input type="checkbox" name="system.traits.{{nom}}" {{checked (oui)}}/> {{ nom }}
+                </label>
+                {{/each}}
+            </div>
+        </div>
         {{!-- Description Tab --}}
         <div class="tab" data-group="primary" data-tab="description">
             {{editor descriptionHTML target="system.description" button=true editable=editable engine="prosemirror"}}
