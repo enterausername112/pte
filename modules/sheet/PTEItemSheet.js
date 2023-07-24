@@ -19,6 +19,7 @@ export default class PTEItemSheet extends ItemSheet{
     getData(){
         const data =super.getData()
         data.config=CONFIG.pte 
+        foundry.utils.mergeObject(data, {system:item.system})
         return data
     }
 }
