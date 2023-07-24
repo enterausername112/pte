@@ -7,7 +7,7 @@
             </h1>
             <div class="resource">
                 <label>Poids</label>
-                <input type="number" name="system.poid" value="{{system.poid}}"/>
+                <input type="number" name="system.poids" value="{{system.poids}}"/>
             </div>
             <div class="resource">
                 <label>Prix</label>
@@ -39,7 +39,7 @@
                 <label>Traits</label>
                 {{#each system.traits }}
                 <label class="checkbox">
-                    <input type="checkbox" name="system.traits.truc" {{checked (this)}}/> truc
+                    <input type="checkbox" name="system.traits.truc" {{checked (this)}}/> {{@key}}
                 </label>
                 {{/each}}
             </div>
