@@ -37,9 +37,9 @@
         <div class="tab traits" data-group="primary" data-tab="traits">
             <div class="form-group stacked">
                 <label>Traits</label>
-                {{#each system.traits as |nom oui|}}
+                {{#each system.traits }}
                 <label class="checkbox">
-                    <input type="checkbox" name="system.traits.{{nom}}" {{checked (oui)}}/> {{ nom }}
+                    <input type="checkbox" name="system.traits.{{@key}}" {{checked (this)}}/> {{ @key }}
                 </label>
                 {{/each}}
             </div>
